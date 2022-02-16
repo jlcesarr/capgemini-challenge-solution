@@ -8,7 +8,8 @@ const password = {
      */
 
     validate: function(passwordInput) {
-        if (passwordInput.length < this.minimumLength) return { remaining: this.minimumLength - passwordInput.length, error: true, minimumLength: this.minimumLength };
+        if (passwordInput.length < this.minimumLength)
+            return { remaining: this.minimumLength - passwordInput.length, error: true, minimumLength: this.minimumLength };
 
         const validatorExpression = `^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[${this.specialCharacters}]){${this.minimumLength},}.+$`
         const passwordRegexValidator = new RegExp(validatorExpression);
@@ -18,5 +19,7 @@ const password = {
         return isSecurePassword ? true : false;
     },
 }
+
+Object.freeze(password)
 
 export { password };

@@ -29,4 +29,6 @@ const anagram = {
     }
 }
 
+Object.freeze(anagram)
+
 export { anagram };

@@ -24,6 +24,7 @@ const ladder = {
     }
 }
 
+Object.freeze(ladder)
 
 
 export { ladder };
