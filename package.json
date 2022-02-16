@@ -1,0 +1,21 @@
+{
+    "name": "desafios-capgemini",
+    "version": "1.0.0",
+    "description": "Soluções desafio Capgemini",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+        "start": "node index.js",
+        "doc:generate": "./node_modules/.bin/jsdoc -d ./documentation"
+    },
+    "author": "Júlio César Pereira Filho",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^27.5.1",
+        "jsdoc": "^3.6.10"
+    },
+    "dependencies": {
+        "prompt": "^1.2.1"
+    }
+}
