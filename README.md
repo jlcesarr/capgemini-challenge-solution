@@ -14,13 +14,13 @@ Javascript (Node), Jest (para testes unitários) e JSDoc (documentação das fun
 Clone o projeto
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/jlcesarr/capgemini-challenge-solution
 ```
 
 Entre no diretório do projeto
 
 ```bash
-  cd my-project
+  cd capgemini-challenge-solution
 ```
 
 Instale as dependências
