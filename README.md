@@ -6,7 +6,7 @@ Este repositório destina-se as soluções das questões do desafio proposto aos
 ## Stack utilizada
 
 
-Javascript (Node) e Jest (para testes unitários) e JSDoc (documentação das funcionalidades)
+Javascript (Node), Jest (para testes unitários) e JSDoc (documentação das funcionalidades)
 
 
 ## Rodando localmente
