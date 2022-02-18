@@ -1,12 +1,13 @@
 {
     "name": "desafios-capgemini",
-    "version": "1.0.0",
-    "description": "Soluções desafio Capgemini",
+    "version": "1.1.0",
+    "description": "Soluções Desafio Capgemini",
     "type": "module",
     "main": "index.js",
     "scripts": {
         "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
         "start": "node index.js",
+        "start:web": "live-server --port=5500 --open=./web --entry-file=./web --mount=/home:./web/ --cors --watch=./web",
         "doc:generate": "./node_modules/.bin/jsdoc -d ./documentation"
     },
     "author": "Júlio César Pereira Filho",
@@ -16,6 +17,7 @@
         "jsdoc": "^3.6.10"
     },
     "dependencies": {
+        "live-server": "^1.2.1",
         "prompt": "^1.2.1"
     }
 }

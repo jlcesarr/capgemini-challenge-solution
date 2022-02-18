@@ -56,3 +56,14 @@ Inicie/Rode o script
  2- Escolha uma das opções/funcionalidades no terminal
 
  3- Siga as instruções no terminal
+
+
+
+## Utilização no navegador (versão web)
+ 1- Inicie o script com o comando 
+  ```bash
+    npm run start:web # ou yarn start:web
+  ```
+ 2- Aguarde até que o seu navegador abra
+
+ 3- Navegue entre a seções/funcionalidades
