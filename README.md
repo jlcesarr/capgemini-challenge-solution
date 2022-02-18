@@ -5,9 +5,19 @@ Este repositório destina-se as soluções das questões do desafio proposto aos
 
 ## Stack utilizada
 
+**Back-end:** Javascript (Node) e Jest (para testes unitários).
 
-Javascript (Node), Jest (para testes unitários) e JSDoc (documentação das funcionalidades)
+**Front-end:** HTML, CSS (SASS) e Javascript. 
 
+JSDoc (Documentação das Funcionalidades)
+
+
+## Requisitos
+**É necessário possuir o NodeJS instalado em sua máquina para rodar o projeto.
+<br>
+Você pode fazer o download em: https://nodejs.org/en/download/
+<br>
+Após a instalação, as instruções abaixo devem ser seguidas.**
 
 ## Rodando localmente
 
@@ -17,7 +27,7 @@ Clone o projeto
   git clone https://github.com/jlcesarr/capgemini-challenge-solution
 ```
 
-Entre no diretório do projeto
+Abra o terminal e entre no diretório do projeto
 
 ```bash
   cd capgemini-challenge-solution
@@ -50,20 +60,20 @@ Inicie/Rode o script
 - Calculadora de anagramas (Questão 3)
 - Validação dos dados inseridos/informados pelo usuário
 
-## Utilização no terminal
- 1- Inicie o script
-
+## Utilização/Rodando no terminal
+ 1- Inicie o script com o comando 
+  ```bash
+    npm start # ou yarn start
+  ```
  2- Escolha uma das opções/funcionalidades no terminal
 
  3- Siga as instruções no terminal
 
-
-
-## Utilização no navegador (versão web)
+## Utilização/Rodando no navegador (versão web)
  1- Inicie o script com o comando 
   ```bash
     npm run start:web # ou yarn start:web
   ```
  2- Aguarde até que o seu navegador abra
 
- 3- Navegue entre a seções/funcionalidades
+ 3- Navegue entre a seções/ funcionalidades
