@@ -72,7 +72,6 @@ const handleButtonClick = (event) => {
     if (featureAttr == 'ladder') {
         let result = ladder.buildLadder(referredSection.input.value)
 
-        console.log(result.split('\n').join('<br>'))
 
         if (result === null) return;
 
