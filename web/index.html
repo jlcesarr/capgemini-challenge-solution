@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Júlio César">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capgemini - Desafio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Saira&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- HERO CONTAINER -->
+    <main class="container hero flex-column justify-start">
+
+        <!-- NAV LIST -->
+        <nav class="options mt-1">
+            <ul class="options-list">
+                <li class="options-item"><a href="#ladder" class="options-link">Construtor de escadas</a></li>
+                <li class="options-item"><a href="#password" class="options-link">Validador de senhas</a></li>
+                <li class="options-item"><a href="#anagram" class="options-link">Calculadora de Anagramas</a></li>
+            </ul>
+        </nav>
+
+        <!-- SECTIONS -->
+        <div class="sections-wrapper">
+
+            <!-- LADDER SECTION -->
+            <section class="ladder w-100 is-active">
+                <div class="input-wrapper justify-center">
+                    <label>Quantidade de degraus
+                        <input type="number" class="input-control" placeholder="0" />
+                    </label>
+                    <button type="button" class="btn-action" data-function="ladder">Construir</button>
+                </div>
+
+                <div class="output">
+                    <div class="output-box">
+                        <h2 class="output-title">SAÍDA</h2>
+                        <pre class="output-text mt-5 px-1">
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- PASSWORD SECTION -->
+            <section class="password w-100">
+                <div class="input-wrapper justify-center">
+                    <label>Senha
+                        <input type="text" class="input-control" placeholder="Ya3" />
+                    </label>
+                    <button type="button" class="btn-action" data-function="password">Verificar</button>
+                </div>
+
+
+                <div class="output">
+                    <div class="output-box">
+                        <h2 class="output-title">SAÍDA</h2>
+
+                        <pre class="output-text mt-5 px-1"> </pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ANAGRAM SECTION -->
+            <section class="anagram w-100">
+                <div class="input-wrapper justify-center">
+                    <label>Palavra
+                        <input type="text" class="input-control" placeholder="Ovo" />
+                    </label>
+                    <button type="button" class="btn-action" data-function="anagram">Calcular</button>
+                </div>
+
+                <div class="output">
+                    <div class="output-box">
+                        <h2 class="output-title">SAÍDA</h2>
+                        <pre class="output-text mt-5 px-1"> </pre>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+
+</html>

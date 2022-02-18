@@ -1,0 +1,134 @@
+$container-name: 'container';
+.#{$container-name} {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sections-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.password,
+.anagram,
+.ladder {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .7s ease;
+    z-index: -1;
+    &.is-active {
+        display: block;
+        z-index: 1;
+    }
+}
+
+main {
+    border-radius: 10px;
+}
+
+nav.options {
+    width: 100%;
+    ul.options-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        .options-link {
+            text-decoration: none;
+            color: $highlight-color;
+            transition: .7s ease;
+            padding: 10px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                opacity: 0;
+                background-color: $highlight-color;
+                transition: .3s ease;
+            }
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.input-wrapper {
+    margin-top: 78px;
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    .input-control {
+        background: #ff8e3c;
+        border: none;
+        display: block;
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 5px 10px;
+        &:active,
+        &:focus {
+            outline: none;
+        }
+        color: $button-text-color;
+        &::placeholder {
+            color: $button-text-color;
+        }
+    }
+    .btn-action {
+        border: none;
+        background: $highlight-color;
+        padding: 5px 10px;
+        height: 30px;
+        color: $button-text-color;
+        pointer-events: all;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .7s ease;
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.output {
+    display: flex;
+    align-self: start;
+    width: 100%;
+    margin-top: 100px;
+    .output-box {
+        overflow-y: scroll;
+        height: 1000px;
+        width: 100%;
+        background: $stroke-color url(../images/company-logo.png) no-repeat center 25%;
+        max-height: 500px;
+        display: flex;
+        color: white;
+        &>* {
+            font-family: "Roboto", sans-serif;
+        }
+        position: relative;
+        .output-title {
+            margin: 0px 0px 8px 8px;
+            color: $main-color;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            opacity: 0.8;
+        }
+    }
+}
