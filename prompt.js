@@ -3,7 +3,9 @@ import { password } from './modules/password.js'
 import { anagram } from './modules/anagram.js'
 
 import prompt from 'prompt';
-import { configuration as promptConfig, messages } from './prompt.schema.js'
+import { configuration as promptConfig } from './prompt.schema.js'
+import messages from './messages.schema.js'
+
 prompt.start()
 
 const handleLadderOptionChoice = () => {

@@ -14,7 +14,7 @@ const anagram = {
 
         for (let i = 0; i < word.length; i++) {
             for (let j = i; j < word.length; j++) {
-                let sortedWord = Array.from(word.substring(i, j + 1)).sort();
+                let sortedWord = Array.from(word.toLowerCase().substring(i, j + 1)).sort();
                 let joinedWord = sortedWord.join('')
 
 
