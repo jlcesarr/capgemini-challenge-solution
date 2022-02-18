@@ -1,28 +1,15 @@
+'use strict'
+
 import { ladder } from '../../../modules/ladder.js'
 import { password } from '../../../modules/password.js'
 import { anagram } from '../../../modules/anagram.js'
-import { messages } from '../../../prompt.schema.js'
+import messages from '../../../messages.schema.js'
 
-// MENU
-const menu = {
-    anchors: document.querySelectorAll('.options-link')
-}
 
 const closeActiveSection = () => {
     const activeSection = document.querySelector('.is-active');
     activeSection.classList.remove('is-active')
 }
-
-menu.anchors.forEach((link) => {
-    link.addEventListener('click', (event) => {
-        const { currentTarget: elementLink } = event;
-
-        const section = elementLink.getAttribute('href').replace("#", "")
-
-        closeActiveSection()
-        sections[section].classList.add('is-active')
-    })
-})
 
 // SECTIONS
 const sections = {
@@ -30,6 +17,20 @@ const sections = {
     password: document.querySelector('.password'),
     anagram: document.querySelector('.anagram'),
 }
+
+// MENU
+const menu = document.querySelector('.options')
+
+menu.addEventListener('click', (event) => {
+    const { target } = event;
+
+    if (target.classList.contains('options-link')) {
+        const section = target.getAttribute('href').replace("#", "")
+        closeActiveSection()
+        sections[section].classList.add('is-active')
+    }
+})
+
 
 const sectionsElements = {
     ladder: {
