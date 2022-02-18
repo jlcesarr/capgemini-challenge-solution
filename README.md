@@ -12,6 +12,9 @@ Este repositório destina-se as soluções das questões do desafio proposto aos
 JSDoc (Documentação das Funcionalidades)
 
 
+## Demonstração
+Demo (versão front-end/web): https://jlcesarr.github.io/capgemini-challenge-solution/web/
+
 ## Requisitos
 **É necessário possuir o NodeJS instalado em sua máquina para rodar o projeto.
 <br>
