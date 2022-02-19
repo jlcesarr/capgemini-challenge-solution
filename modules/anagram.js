@@ -3,18 +3,23 @@ const anagram = {
 
     /**
      * @param  {string} word - The word to calculate the quantity of anagrams
-     * @return {(null|number)} - Return null if the word param is a numeric value or it's  empty. Otherwise, return the quantity of anagrams of the word
+     * @return {(null|number)} - Return null if the word param contains a numeric char or it's empty. Otherwise, return the quantity of anagrams of the word
      */
 
     getAnagrams: function(word) {
         let counter = 0;
         let obj = {};
 
-        if (!word || !isNaN(word)) return null;
+        let hasNumericChar = /[0-9]/g.test(word)
+
+        if (!word || hasNumericChar) return null;
+
+        word = word.replace(/[0-9]/g, "").toLowerCase()
 
         for (let i = 0; i < word.length; i++) {
             for (let j = i; j < word.length; j++) {
-                let sortedWord = Array.from(word.toLowerCase().substring(i, j + 1)).sort();
+
+                let sortedWord = Array.from(word.substring(i, j + 1)).sort();
                 let joinedWord = sortedWord.join('')
 
 
