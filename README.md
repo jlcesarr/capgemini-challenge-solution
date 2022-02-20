@@ -45,11 +45,18 @@ Instale as dependências
 Inicie/Rode o script
 
 ```bash
+  # Para rodar a versão no terminal, utilize:
+  
   npm start # ou yarn start
+  
+  # Para rodar a versão web (front), utilize:
+
+  npm run start:web # ou yarn start:web
+  
 ```
 
 
-### Rodando os testes unitários
+### Rodando os testes unitários (Jest)
 
 ```bash
   npm test # ou yarn test
